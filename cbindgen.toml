@@ -1,0 +1,5 @@
+header = "/* don't paic */"
+include_guard = "DONTPANIC_H"
+tab_width = 4
+style = "Type"
+language = "C"

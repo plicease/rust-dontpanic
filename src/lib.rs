@@ -1,6 +1,11 @@
-#[no_mangle]
-pub extern "C" fn answer() -> i32 {
-    42
+#[cfg(cargo_c)]
+pub mod capi {
+
+    #[no_mangle]
+    pub extern "C" fn answer() -> i32 {
+        42
+    }
+
 }
 
 #[cfg(test)]
